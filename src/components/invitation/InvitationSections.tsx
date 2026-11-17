@@ -11,11 +11,7 @@ export function HeroSection() {
       <div className="hero-copy" data-reveal>
         <p className="eyebrow hero-eyebrow">{siteContent.heroEyebrow}</p>
         <h1 id="hero-title" className="hero-title">
-          {siteContent.heroTitle.map((line) => (
-            <span className="hero-title-line" key={line}>
-              {line}
-            </span>
-          ))}
+          <span className="hero-title-line">{siteContent.heroTitle}</span>
         </h1>
         <p className="hero-name" aria-label={graduateName.join(' ')}>
           <span>{graduateName.slice(0, 2).join(' ')}</span>
