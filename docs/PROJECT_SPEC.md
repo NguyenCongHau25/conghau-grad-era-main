@@ -169,6 +169,7 @@ These are implementation notes, not a claim that every viewport or assistive tec
 - **Portrait:** replace `public/img/pt-portrait.jpg` and update `event.portraitSrc` if the path changes. The current portrait is configured and present.
 - **Audio:** replace `public/audio/grad-audio.mp3` and update `event.audioSrc` if the path changes.
 - **Map:** update `event.mapEmbedUrl` with a real Google Maps embed URL and `event.directionsUrl` with its visitor navigation link. Do not use the short navigation URL as an iframe source.
+- **Link preview:** `src/app/layout.tsx` exposes the portrait as the Open Graph and Twitter thumbnail. Set `NEXT_PUBLIC_SITE_URL` in Vercel when the production site uses a custom domain; otherwise Vercel's deployment URL is used.
 - **Design and responsive behavior:** edit `src/app/globals.css`; illustration geometry and variants are in `SunflowerIllustration.tsx` and `SunflowerReveal.tsx`.
 
 ## 12. Development and Verification
