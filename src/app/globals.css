@@ -430,7 +430,7 @@ figure {
 
 .portrait-frame {
   position: relative;
-  width: min(100%, 440px);
+  width: min(100%, 500px);
   justify-self: center;
   padding: 12px;
   border: 1px solid #c8af84;
@@ -550,6 +550,7 @@ figure {
   font-style: italic;
   line-height: 1.8;
   text-wrap: pretty;
+  white-space: pre-line;
 }
 .invitation-message {
   width: 100%;
@@ -565,7 +566,7 @@ figure {
   margin-top: 14px;
 }
 .invitation-message .invitation-opening {
-  font-size: clamp(1.55rem, 2.5vw, 2.25rem);
+  font-size: clamp(1.25rem, 2vw, 1.8rem);
   font-weight: 800;
   line-height: 1.32;
   text-wrap: pretty;
@@ -919,6 +920,13 @@ figure {
   margin-bottom: 2px;
 }
 
+.closing-section > p:first-of-type {
+  font-size: clamp(1.02rem, 1.55vw, 1.22rem);
+  font-weight: 500;
+  line-height: 1.8;
+  white-space: pre-line;
+}
+
 .closing-copy {
   display: flex;
   flex-direction: column;
@@ -1041,7 +1049,7 @@ figure {
   }
 
   .portrait-frame {
-    width: min(100%, 430px);
+    width: min(100%, 480px);
   }
 }
 
@@ -1075,7 +1083,7 @@ figure {
   }
 
   .portrait-frame {
-    width: min(86%, 370px);
+    width: min(100%, 430px);
   }
 
   .event-details {

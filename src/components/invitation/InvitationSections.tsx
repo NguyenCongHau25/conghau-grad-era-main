@@ -9,7 +9,7 @@ export function HeroSection() {
   return (
     <section className="hero section-wrap" aria-labelledby="hero-title">
       <div className="hero-copy" data-reveal>
-        <p className="eyebrow hero-eyebrow">{siteContent.heroEyebrow}</p>
+        {/* <p className="eyebrow hero-eyebrow">{siteContent.heroEyebrow}</p> */}
         <h1 id="hero-title" className="hero-title">
           <span className="hero-title-line">{siteContent.heroTitle}</span>
         </h1>

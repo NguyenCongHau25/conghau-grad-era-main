@@ -1,4 +1,4 @@
-# Phương Tuyền Graduation Invitation
+# Công Hậu Graduation Invitation
 
 This document describes the current application. `src/data/event.ts`, `src/data/content.ts`, and the rendered components are the source of truth for event data, copy, and behavior.
 
@@ -12,19 +12,19 @@ The experience opens with an interactive potted sunflower and then presents four
 
 Event and media values are maintained in `src/data/event.ts`.
 
-| Field | Current value |
-|---|---|
-| Graduate | Trần Nguyễn Phương Tuyền |
-| University | Trường Đại học Bách khoa TP.HCM |
-| Program | Kỹ thuật Hệ thống công nghiệp |
-| Class | ISE K22 |
-| Date | Friday, 27 November 2026 |
-| Time | 15:00–17:00 |
-| Time zone | `Asia/Ho_Chi_Minh` |
-| Venue | Trường Đại học Bách khoa TP.HCM |
-| Address | 268 Lý Thường Kiệt, Phường Diên Hồng (Quận 10 cũ), TP.HCM |
-| Contact | Phương Tuyền — 0908 719 199 |
-| Phone action | `tel:+84908719199` |
+| Field        | Current value                                          |
+| ------------ | ------------------------------------------------------ |
+| Graduate     | Nguyễn Công Hậu                                     |
+| University   | Trường Đại học Công nghệ hông tin - ĐHQG HCM  |
+| Program      | Khoa học máy tính                                   |
+| Class        | KHMT2023.1                                             |
+| Date         | Thursday, 26 November 2026                             |
+| Time         | 10:30–11:00                                           |
+| Time zone    | `Asia/Ho_Chi_Minh`                                   |
+| Venue        | Trường Đại học công nghệ thông tin - ĐHQG HCM |
+| Address      | Khu phố 09, phường Linh Trung, Tp. Hồ Chí Minh    |
+| Contact      | Công Hậu — 0362 804 438                             |
+| Phone action | `tel:+84362804438`                                   |
 
 The event data also contains the Google Maps directions URL, iframe URL, portrait path, and audio path.
 
@@ -38,15 +38,15 @@ The visual direction is warm, bright, friendly, youthful, and editorial. Cream a
 
 The CSS custom properties are defined in `src/app/globals.css`:
 
-| Token | Value |
-|---|---|
-| `--cream` | `#FFF9EF` |
-| `--butter` | `#F7E19B` |
-| `--beige` | `#E9DCC6` |
-| `--sunflower` | `#F4B942` |
-| `--brown` | `#654321` |
+| Token            | Value       |
+| ---------------- | ----------- |
+| `--cream`      | `#FFF9EF` |
+| `--butter`     | `#F7E19B` |
+| `--beige`      | `#E9DCC6` |
+| `--sunflower`  | `#F4B942` |
+| `--brown`      | `#654321` |
 | `--brown-soft` | `#765A3C` |
-| `--paper` | `#FFFDF8` |
+| `--paper`      | `#FFFDF8` |
 
 ### Typography and layout
 
@@ -131,20 +131,20 @@ The fixed speaker button lets the visitor pause or retry playback manually. Play
 
 ## 9. Architecture
 
-| Path | Responsibility |
-|---|---|
-| `src/app/page.tsx` | Composes the invitation at the root route. |
-| `src/app/layout.tsx` | Sets Vietnamese document language, fonts, and page metadata. |
-| `src/app/globals.css` | Design tokens, responsive layout, illustration styling, reveal transitions, and reduced-motion rules. |
-| `src/components/invitation/InvitationExperience.tsx` | Owns reveal phase, reduced-motion opening behavior, scroll observer, and music-player control. |
-| `src/components/invitation/SunflowerReveal.tsx` | Accessible button and potted sunflower SVG. |
-| `src/components/invitation/InvitationSections.tsx` | Renders the four main content sections. |
-| `src/components/invitation/SunflowerIllustration.tsx` | Reusable inline SVG botanical variants. |
-| `src/components/invitation/FloatingPetals.tsx` | Decorative, aria-hidden ambient petals. |
-| `src/components/invitation/MusicPlayer.tsx` | Native looping audio and speaker control. |
-| `src/components/invitation/VenueMapPreview.tsx` | Google Maps iframe validation and fallback. |
-| `src/data/content.ts` | Vietnamese interface and invitation text. |
-| `src/data/event.ts` | Graduate, event, contact, map, portrait, and audio values. |
+| Path                                                    | Responsibility                                                                                        |
+| ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| `src/app/page.tsx`                                    | Composes the invitation at the root route.                                                            |
+| `src/app/layout.tsx`                                  | Sets Vietnamese document language, fonts, and page metadata.                                          |
+| `src/app/globals.css`                                 | Design tokens, responsive layout, illustration styling, reveal transitions, and reduced-motion rules. |
+| `src/components/invitation/InvitationExperience.tsx`  | Owns reveal phase, reduced-motion opening behavior, scroll observer, and music-player control.        |
+| `src/components/invitation/SunflowerReveal.tsx`       | Accessible button and potted sunflower SVG.                                                           |
+| `src/components/invitation/InvitationSections.tsx`    | Renders the four main content sections.                                                               |
+| `src/components/invitation/SunflowerIllustration.tsx` | Reusable inline SVG botanical variants.                                                               |
+| `src/components/invitation/FloatingPetals.tsx`        | Decorative, aria-hidden ambient petals.                                                               |
+| `src/components/invitation/MusicPlayer.tsx`           | Native looping audio and speaker control.                                                             |
+| `src/components/invitation/VenueMapPreview.tsx`       | Google Maps iframe validation and fallback.                                                           |
+| `src/data/content.ts`                                 | Vietnamese interface and invitation text.                                                             |
+| `src/data/event.ts`                                   | Graduate, event, contact, map, portrait, and audio values.                                            |
 
 The application uses Next.js 16, React 19, TypeScript, Tailwind CSS 4, custom CSS, and native browser APIs. No backend or state-management library is present.
 

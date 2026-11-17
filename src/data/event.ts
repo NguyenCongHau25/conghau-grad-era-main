@@ -1,6 +1,6 @@
 export const event = {
   graduate: 'Nguyễn Công Hậu',
-  university: 'Trường Đại học Công nghệ thông tin — ĐHQG TP.HCM',
+  university: 'Trường Đại học Công nghệ Thông tin',
   program: 'Khoa học máy tính',
   class: 'KHMT2023.1',
   date: '2026-11-26',

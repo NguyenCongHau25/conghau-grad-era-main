@@ -1,17 +1,7 @@
 import type { Metadata } from 'next';
 import { Barlow_Condensed, Be_Vietnam_Pro } from 'next/font/google';
 import { siteContent } from '@/data/content';
-import { event } from '@/data/event';
 import './globals.css';
-
-const deploymentUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  process.env.VERCEL_PROJECT_PRODUCTION_URL ??
-  process.env.VERCEL_URL ??
-  'http://localhost:3000';
-const metadataBase = new URL(
-  deploymentUrl.startsWith('http') ? deploymentUrl : `https://${deploymentUrl}`,
-);
 
 const bodyFont = Be_Vietnam_Pro({
   variable: '--font-body',
@@ -28,26 +18,12 @@ const displayFont = Barlow_Condensed({
 });
 
 export const metadata: Metadata = {
-  metadataBase,
   title: siteContent.title,
   description: siteContent.description,
   openGraph: {
     title: siteContent.title,
     description: siteContent.description,
     type: 'website',
-    locale: 'vi_VN',
-    images: [
-      {
-        url: event.portraitSrc,
-        alt: `Chân dung tốt nghiệp của ${event.graduate}`,
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: siteContent.title,
-    description: siteContent.description,
-    images: [event.portraitSrc],
   },
 };
 
