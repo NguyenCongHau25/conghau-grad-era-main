@@ -2,7 +2,7 @@ export const siteContent = {
   title: 'Công Hậu· Cong Hau Graduation',
   description: 'Lời mời dự lễ tốt nghiệp của Nguyễn Công Hậu.',
   revealLabel: 'CHẠM ĐỂ HOA NỞ',
-  revealSender: 'CÔNG HẬU\nGỬI ĐẾN BẠN\nMỘT CHÚ NẮNG',
+  revealSender: 'CÔNG HẬU\nGỬI ĐẾN BẠN\nMỘT CHÚT NẮNG',
   revealAccessibleLabel:
     'Chạm vào chậu hoa để hoa lớn lên, nở rộ và mở thiệp mời tốt nghiệp của Công Hậu',
   heroEyebrow: "YOU'RE INVITED!",
