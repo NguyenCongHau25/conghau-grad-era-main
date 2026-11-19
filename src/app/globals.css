@@ -555,7 +555,7 @@ figure {
 .invitation-message {
   width: 100%;
   color: var(--brown);
-  font-size: clamp(1.02rem, 1.55vw, 1.22rem);
+  font-size: clamp(0.9rem, 1.4vw, 1rem);
   font-weight: 500;
   line-height: 1.8;
 }
@@ -566,7 +566,7 @@ figure {
   margin-top: 14px;
 }
 .invitation-message .invitation-opening {
-  font-size: clamp(1.25rem, 2vw, 1.8rem);
+  font-size: clamp(1.02rem, 1.55vw, 1.22rem);
   font-weight: 800;
   line-height: 1.32;
   text-wrap: pretty;
